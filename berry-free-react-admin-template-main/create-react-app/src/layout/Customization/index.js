@@ -88,7 +88,6 @@ const Customization = () => {
 
   return (
     <>
-      {/* toggle button */}
       <Tooltip title="Live Customize">
         <Fab
           component="div"
@@ -96,19 +95,7 @@ const Customization = () => {
           size="medium"
           variant="circular"
           color="secondary"
-          sx={{
-            borderRadius: 0,
-            borderTopLeftRadius: '50%',
-            borderBottomLeftRadius: '50%',
-            borderTopRightRadius: '50%',
-            borderBottomRightRadius: '4px',
-            top: '25%',
-            position: 'fixed',
-            right: 10,
-            zIndex: theme.zIndex.speedDial
-          }}
         >
-       
         </Fab>
       </Tooltip>
 
@@ -125,7 +112,6 @@ const Customization = () => {
         <PerfectScrollbar component="div">
           <Grid container spacing={gridSpacing} sx={{ p: 3 }}>
             <Grid item xs={12}>
-              {/* font family */}
               <SubCard title="Font Family">
                 <FormControl>
                   <RadioGroup
@@ -166,7 +152,6 @@ const Customization = () => {
               </SubCard>
             </Grid>
             <Grid item xs={12}>
-              {/* border radius */}
               <SubCard title="Border Radius">
                 <Grid item xs={12} container spacing={2} alignItems="center" sx={{ mt: 2.5 }}>
                   <Grid item>

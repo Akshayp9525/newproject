@@ -1,14 +1,6 @@
 import PropTypes from 'prop-types';
-
-// material-ui
 import { Box, Card, Grid, Typography } from '@mui/material';
-
-// project imports
 import MainCard from 'ui-component/cards/MainCard';
-import SecondaryAction from 'ui-component/cards/CardSecondaryAction';
-
-// ===============================|| COLOR BOX ||=============================== //
-
 const ColorBox = ({ bgcolor, title, data, dark }) => (
   <>
     <Card sx={{ mb: 3 }}>
@@ -51,11 +43,8 @@ ColorBox.propTypes = {
   data: PropTypes.object.isRequired,
   dark: PropTypes.bool
 };
-
-// ===============================|| UI COLOR ||=============================== //
-
 const UIColor = () => (
-  <MainCard title="Exam Type" secondary={<SecondaryAction link="https://next.material-ui.com/system/palette/" />}>
+  <MainCard title="Exam Type">
    
   </MainCard>
 );

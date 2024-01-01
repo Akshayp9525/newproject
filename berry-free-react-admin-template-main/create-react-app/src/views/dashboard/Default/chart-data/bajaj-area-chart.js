@@ -1,5 +1,3 @@
-// ===========================|| DASHBOARD - BAJAJ AREA CHART ||=========================== //
-
 const chartData = {
   type: 'area',
   height: 95,
