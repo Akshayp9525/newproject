@@ -9,21 +9,19 @@ import {
   FormControl,
   FormControlLabel,
   Grid,
-  IconButton,
   Radio,
   RadioGroup,
   Slider,
   Tooltip,
   Typography
 } from '@mui/material';
-import { IconSettings } from '@tabler/icons';
+// import { IconSettings } from '@tabler/icons';
 
 // third-party
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
 // project imports
 import SubCard from 'ui-component/cards/SubCard';
-import AnimateButton from 'ui-component/extended/AnimateButton';
 import { SET_BORDER_RADIUS, SET_FONT_FAMILY } from 'store/actions';
 import { gridSpacing } from 'store/constant';
 
@@ -110,11 +108,7 @@ const Customization = () => {
             zIndex: theme.zIndex.speedDial
           }}
         >
-          <AnimateButton type="rotate">
-            <IconButton color="inherit" size="large" disableRipple>
-              <IconSettings />
-            </IconButton>
-          </AnimateButton>
+       
         </Fab>
       </Tooltip>
 
