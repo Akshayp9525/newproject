@@ -136,9 +136,6 @@ const ProfileSection = () => {
                           [theme.breakpoints.down('md')]: {
                             minWidth: '100%'
                           },
-                          '& .MuiListItemButton-root': {
-                            mt: 0.5
-                          }
                         }}
                       >
                    

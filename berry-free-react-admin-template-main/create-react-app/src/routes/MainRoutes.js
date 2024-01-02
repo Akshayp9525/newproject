@@ -4,9 +4,9 @@ import MainLayout from 'layout/MainLayout';
 import Loadable from 'ui-component/Loadable';
 
 const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')));
-const UtilsTypography = Loadable(lazy(() => import('views/utilities/Typography')));
-const UtilsColor = Loadable(lazy(() => import('views/utilities/Color')));
-const UtilsShadow = Loadable(lazy(() => import('views/utilities/Shadow')));
+const UtilsTypography = Loadable(lazy(() => import('views/utilities/profile')));
+const UtilsColor = Loadable(lazy(() => import('views/utilities/examType')));
+const UtilsShadow = Loadable(lazy(() => import('views/utilities/questions')));
 
 
 const MainRoutes = {
