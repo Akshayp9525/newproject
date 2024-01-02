@@ -2,10 +2,9 @@ import { Suspense } from 'react';
 
 import Loader from './Loader';
 
-const Loadable = (Component) => (props) =>
+const Loadable = () => () =>
   (
     <Suspense fallback={<Loader />}>
-      <Component {...props} />
     </Suspense>
   );
 

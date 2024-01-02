@@ -1,4 +1,13 @@
 
+import { IconTypography, IconPalette, IconShadow, IconWindmill } from '@tabler/icons';
+
+// constant
+const icons = {
+  IconTypography,
+  IconPalette,
+  IconShadow,
+  IconWindmill
+};
 const utilities = {
   id: 'utilities',
   title: 'Utilities',
@@ -9,25 +18,58 @@ const utilities = {
       title: 'Profile',
       type: 'item',
       url: '/utils/util-typography',
-      // icon: icons.IconTypography,
+      icon: icons.IconTypography,
       breadcrumbs: false
     },
     {
-      id: 'util-color',
+      id: 'util-extype',
       title: 'Exam Type',
       type: 'item',
-      url: '/utils/util-color',
-      // icon: icons.IconPalette,
+      url: '/utils/util-examtype',
+      icon: icons.IconPalette,
       breadcrumbs: false
     },
     {
-      id: 'util-shadow',
+      id: 'util-questions',
       title: 'Questions',
       type: 'item',
-      url: '/utils/util-shadow',
-      // icon: icons.IconShadow,
+      url: '/utils/util-question',
+      icon: icons.IconShadow,
       breadcrumbs: false
     },
+    {
+      id: 'util-id',
+      title: 'Job ID',
+      type: 'item',
+      url: '/utils/util-jobid',
+      icon: icons.IconShadow,
+      breadcrumbs: false
+    },
+    {
+      id: 'util-hr',
+      title: 'HR List',
+      type: 'item',
+      url: '/utils/util-hr',
+      icon: icons.IconWindmill,
+      breadcrumbs: false
+    },
+    {
+      id: 'util-result',
+      title: 'Result',
+      type: 'item',
+      url: '/utils/util-result',
+      icon: icons.IconWindmill,
+      breadcrumbs: false
+    },
+    {
+      id: 'util-GenerateExam',
+      title: 'Generate',
+      type: 'item',
+      url: '/utils/util-GenerateExams',
+      icon: icons.IconWindmill,
+      breadcrumbs: false
+    },
+   
   
   ]
 };

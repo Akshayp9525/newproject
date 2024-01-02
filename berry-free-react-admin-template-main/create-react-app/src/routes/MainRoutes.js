@@ -5,8 +5,12 @@ import Loadable from 'ui-component/Loadable';
 
 const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')));
 const UtilsTypography = Loadable(lazy(() => import('views/utilities/profile')));
-const UtilsColor = Loadable(lazy(() => import('views/utilities/examType')));
-const UtilsShadow = Loadable(lazy(() => import('views/utilities/questions')));
+const ExamType = Loadable(lazy(() => import('views/utilities/examType')));
+const UtilsQuestions = Loadable(lazy(() => import('views/utilities/questions')));
+const UtilsHrList = Loadable(lazy(() => import('views/utilities/Hrlist')));
+const UtilsJobId = Loadable(lazy(() => import('views/utilities/Jobid')));
+const UtilsResults = Loadable(lazy(() => import('views/utilities/result')));
+const UtilsRGenerateExam = Loadable(lazy(() => import('views/utilities/GenerateExam')));
 
 
 const MainRoutes = {
@@ -39,8 +43,8 @@ const MainRoutes = {
       path: 'utils',
       children: [
         {
-          path: 'util-color',
-          element: <UtilsColor />
+          path: 'util-examtype',
+          element: <ExamType />
         }
       ]
     },
@@ -48,12 +52,47 @@ const MainRoutes = {
       path: 'utils',
       children: [
         {
-          path: 'util-shadow',
-          element: <UtilsShadow />
+          path: 'util-question',
+          element: <UtilsQuestions/>
         }
       ]
     },
- 
+    {
+      path: 'utils',
+      children: [
+        {
+          path: 'util-hr',
+          element: <UtilsHrList/>
+        }
+      ]
+    },
+    {
+      path: 'utils',
+      children: [
+        {
+          path: 'util-jobid',
+          element: <UtilsJobId/>
+        }
+      ]
+    },
+    {
+      path: 'utils',
+      children: [
+        {
+          path: 'util-result',
+          element: <UtilsResults/>
+        }
+      ]
+    },
+    {
+      path: 'utils',
+      children: [
+        {
+          path: 'util-GenerateExams',
+          element: <UtilsRGenerateExam/>
+        }
+      ]
+    },
   ]
 };
 
