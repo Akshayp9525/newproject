@@ -3,7 +3,6 @@ import { useTheme } from '@mui/material/styles';
 import { Avatar, Box, ButtonBase } from '@mui/material';
 import LogoSection from '../LogoSection';
 import SearchSection from './SearchSection';
-import ProfileSection from './ProfileSection';
 import { IconMenu2 } from '@tabler/icons';
 
 const Header = ({ handleLeftDrawerToggle }) => {
@@ -46,7 +45,6 @@ const Header = ({ handleLeftDrawerToggle }) => {
       <SearchSection />
       <Box sx={{ flexGrow: 1 }} />
       <Box sx={{ flexGrow: 1 }} />
-      <ProfileSection />
     </>
   );
 };
