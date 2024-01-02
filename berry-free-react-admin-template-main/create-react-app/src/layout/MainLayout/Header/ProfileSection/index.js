@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
 import { useTheme } from '@mui/material/styles';
 import {
   Avatar,
@@ -21,7 +20,6 @@ import Transitions from 'ui-component/extended/Transitions';
 import { IconLogout, IconSettings } from '@tabler/icons';
 const ProfileSection = () => {
   const theme = useTheme();
-  const customization = useSelector((state) => state.customization);
   const navigate = useNavigate();
   const [selectedIndex, setSelectedIndex] = useState(-1);
   const [open, setOpen] = useState(false);
@@ -145,13 +143,11 @@ const ProfileSection = () => {
                       >
                    
                         <ListItemButton
-                          sx={{ borderRadius: `${customization.borderRadius}px` }}
                           selected={selectedIndex === 1}
                           onClick={(event) => handleListItemClick(event, 1, '#')}
                         >
                         </ListItemButton>
                         <ListItemButton
-                          sx={{ borderRadius: `${customization.borderRadius}px` }}
                           selected={selectedIndex === 4}
                           onClick={handleLogout}
                         >

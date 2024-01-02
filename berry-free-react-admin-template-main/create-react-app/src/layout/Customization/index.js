@@ -1,49 +1,36 @@
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
-// material-ui
-import { useTheme } from '@mui/material/styles';
 import {
   Drawer,
   Fab,
   FormControl,
-  FormControlLabel,
   Grid,
-  Radio,
   RadioGroup,
   Slider,
   Tooltip,
   Typography
 } from '@mui/material';
-// import { IconSettings } from '@tabler/icons';
 
-// third-party
 import PerfectScrollbar from 'react-perfect-scrollbar';
 
-// project imports
 import SubCard from 'ui-component/cards/SubCard';
 import { SET_BORDER_RADIUS, SET_FONT_FAMILY } from 'store/actions';
 import { gridSpacing } from 'store/constant';
 
-// concat 'px'
 function valueText(value) {
   return `${value}px`;
 }
 
-// ==============================|| LIVE CUSTOMIZATION ||============================== //
 
 const Customization = () => {
-  const theme = useTheme();
   const dispatch = useDispatch();
   const customization = useSelector((state) => state.customization);
 
-  // drawer on/off
   const [open, setOpen] = useState(false);
   const handleToggle = () => {
     setOpen(!open);
   };
 
-  // state - border radius
   const [borderRadius, setBorderRadius] = useState(customization.borderRadius);
   const handleBorderRadius = (event, newValue) => {
     setBorderRadius(newValue);
@@ -67,7 +54,6 @@ const Customization = () => {
       break;
   }
 
-  // state - font family
   const [fontFamily, setFontFamily] = useState(initialFont);
   useEffect(() => {
     let newFont;
@@ -120,33 +106,7 @@ const Customization = () => {
                     onChange={(e) => setFontFamily(e.target.value)}
                     name="row-radio-buttons-group"
                   >
-                    <FormControlLabel
-                      value="Roboto"
-                      control={<Radio />}
-                      label="Roboto"
-                      sx={{
-                        '& .MuiSvgIcon-root': { fontSize: 28 },
-                        '& .MuiFormControlLabel-label': { color: theme.palette.grey[900] }
-                      }}
-                    />
-                    <FormControlLabel
-                      value="Poppins"
-                      control={<Radio />}
-                      label="Poppins"
-                      sx={{
-                        '& .MuiSvgIcon-root': { fontSize: 28 },
-                        '& .MuiFormControlLabel-label': { color: theme.palette.grey[900] }
-                      }}
-                    />
-                    <FormControlLabel
-                      value="Inter"
-                      control={<Radio />}
-                      label="Inter"
-                      sx={{
-                        '& .MuiSvgIcon-root': { fontSize: 28 },
-                        '& .MuiFormControlLabel-label': { color: theme.palette.grey[900] }
-                      }}
-                    />
+                  
                   </RadioGroup>
                 </FormControl>
               </SubCard>
