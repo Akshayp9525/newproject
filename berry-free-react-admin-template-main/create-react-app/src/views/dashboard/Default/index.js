@@ -1,18 +1,12 @@
 import { useEffect, useState } from 'react';
-
-// material-ui
 import { Grid } from '@mui/material';
-
-// project imports
 import EarningCard from './EarningCard';
-import PopularCard from './PopularCard';
+// import PopularCard from './PopularCard';
 import TotalOrderLineChartCard from './TotalOrderLineChartCard';
 import TotalIncomeDarkCard from './TotalIncomeDarkCard';
 import TotalIncomeLightCard from './TotalIncomeLightCard';
 import TotalGrowthBarChart from './TotalGrowthBarChart';
 import { gridSpacing } from 'store/constant';
-
-// ==============================|| DEFAULT DASHBOARD ||============================== //
 
 const Dashboard = () => {
   const [isLoading, setLoading] = useState(true);
@@ -48,7 +42,7 @@ const Dashboard = () => {
             <TotalGrowthBarChart isLoading={isLoading} />
           </Grid>
           <Grid item xs={12} md={4}>
-            <PopularCard isLoading={isLoading} />
+            {/* <PopularCard isLoading={isLoading} /> */}
           </Grid>
         </Grid>
       </Grid>

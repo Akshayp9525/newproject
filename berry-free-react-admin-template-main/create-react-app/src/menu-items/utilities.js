@@ -1,15 +1,3 @@
-// assets
-import { IconTypography, IconPalette, IconShadow, IconWindmill } from '@tabler/icons';
-
-// constant
-const icons = {
-  IconTypography,
-  IconPalette,
-  IconShadow,
-  IconWindmill
-};
-
-// ==============================|| UTILITIES MENU ITEMS ||============================== //
 
 const utilities = {
   id: 'utilities',
@@ -18,10 +6,10 @@ const utilities = {
   children: [
     {
       id: 'util-typography',
-      title: 'Typography',
+      title: 'Profile',
       type: 'item',
       url: '/utils/util-typography',
-      icon: icons.IconTypography,
+      // icon: icons.IconTypography,
       breadcrumbs: false
     },
     {
@@ -29,7 +17,7 @@ const utilities = {
       title: 'Exam Type',
       type: 'item',
       url: '/utils/util-color',
-      icon: icons.IconPalette,
+      // icon: icons.IconPalette,
       breadcrumbs: false
     },
     {
@@ -37,7 +25,7 @@ const utilities = {
       title: 'Questions',
       type: 'item',
       url: '/utils/util-shadow',
-      icon: icons.IconShadow,
+      // icon: icons.IconShadow,
       breadcrumbs: false
     },
   
